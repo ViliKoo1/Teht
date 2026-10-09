@@ -1,0 +1,120 @@
+/* Created By: Vili Kalliokoski */
+
+body, html {
+    height: 100%;
+    background-color: #e7e7e7;
+    padding-bottom: 275px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    background-color: #222222;
+    color: #f09000;
+
+}
+
+.hero img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid #f09000ef;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.chapter1{
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.chapter1 h2{
+    text-align: center;
+    color: #333;
+    border-bottom: 3px solid #f09000;
+    padding-bottom: 10px;
+}
+
+.chapter1 p{
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #f09000;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #f09000;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #222;
+    color: #f09000;
+}
+
+.gallery {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.gallery h1 {
+    text-align: center;
+    color: #333;
+    border-bottom: 3px solid #f09000;
+    padding-bottom: 10px;
+}
+
+.galleryimage {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.galleryimage figure{
+    margin: 0;
+    background-color: #222;
+    padding: 10px;
+    border: 2px solid #f09000;
+}
+
+.galleryimage figcaption{
+    color: #f09000;
+    margin-top: 10px;
+}
+
+.galleryimage img{
+    width: 560px;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+}
+

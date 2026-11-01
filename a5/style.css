@@ -165,6 +165,18 @@ main {
     font: inherit;
 }
 
+.register .terms-text{
+    padding: 15px;
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+
+.register .terms-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
 .register .terms {
     display: flex;
     align-items: center;

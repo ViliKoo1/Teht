@@ -1,0 +1,58 @@
+<!--
+Created By: Vili Kalliokoski
+-->
+
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <title>Rekisteröityminen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+    <a href="index.html" class="button">Etusivu</a>
+    <a href="gallery.html" class="button">Galleria</a>
+    <a href="register.html" class="button"><strong>Rekisteröidy</strong></a>
+
+</nav>
+  <main class="register">
+
+    <h1>Rekisteröityminen</h1>
+    <p>Täytä alla olevat tiedot rekisteröityäksesi.</p>
+
+    <form action="https://httpbin.org/post" method="post">
+    <label for="name">Nimi</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Sähköpostiosoite</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="username">Käyttäjänimi</label>
+    <input type="text" id="username" name="username" minlength="3" required>
+
+    <label for="password">Salasana</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+        
+    <label for="usertype">Käyttäjätyyppi</label>
+    <select name="usertype" id="usertype" required>
+      <option value="">Valitse käyttäjätyyppi</option>
+      <option value="user">Käyttäjä</option>
+      <option value="guest">Vieras</option>
+      <option value="admin">Ylläpitäjä</option>
+    </select>
+
+    <div class="terms">
+      <input type="checkbox" id="terms" name="terms" value="Accepted" required>
+      <label for="terms">Hyväksyn käyttöehdot</label>
+    </div>
+
+    <button type="submit">Rekisteröidy</button>
+    </form>
+  </main>
+  </body>
+</html>

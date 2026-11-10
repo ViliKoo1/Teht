@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suomen kaupunkilomat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header> 
+        <h1><a href="index.html">Suomen Kaupunkilomat Oy</a></h1>
+      <nav>
+            <a href="index.html">Etusivu</a>
+            <a href="matkainfo.html">Matkainfo</a>
+            <a href="matkatoive.html" class="active">Matkatoiveet</a>
+        </nav>
+    </header>
+
+  <main>
+
+    <section class="requestform">
+
+      <h2>Täytä alla oleva lomake lähettääksesi matkatoiveen.</h2>
+      <p>HUOM: Tämä on harjoituslomake!</p>
+    <form>
+      <label for="email">Sähköposti</label>
+      <input type="email" id="email" name="email" placeholder="esimerkkiposti@mail.fi" required>
+      <p class="error">Tarkista antamasi sähköpostiosoite.</p>
+
+      <label for="location">Matkakohde</label>
+      <select id="location" name="location" required>
+        <option value="">Valitse Matkakohde</option>
+        <option value="tampere">Tampere</option>
+        <option value="turku">Turku</option>
+        <option value="helsinki">Helsinki</option>
+      </select>
+
+      <label for="day">Lähtöpäivä</label>
+      <input type="date" id="day" name="day" required>
+
+      <label for="count">Henkilömäärä</label>
+      <input type="number" id="count" name="count" min="1" max="8" required>
+
+      <button type="submit">Lähetä matkatoive</button>
+
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>Yhteystietomme:</h2>
+      <p>Sähköposti: suomenkaupunkilomat@gmail.com</p>
+      <p>Puhelin: 045 237 8923</p>
+    </section>
+  </main>
+
+    <footer>
+      <p>Suomen Kaupunkilomat Oy</p>
+      <p>suomenkaupunkilomat@gmail.com</p>
+     <p>&copy; 2026 Suomen Kaupunkilomat Oy</p>
+    </footer>
+
+  </body>
+</html>
